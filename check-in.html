@@ -82,7 +82,7 @@
       const dateOut = setaData(document.querySelector('#checkout_date').value)
       const adultos = document.querySelector('#adults').value 
       const criancas = document.querySelector('#children').value 
-      const tipo = document.querySelector('#tipo').value = 0 ? 'Chalé' : 'Camping'
+      const tipo = document.querySelector('#tipo').selectedIndex === 0 ? 'Chalé' : 'Camping'
       
       var cMensagem = `Olá, gostaria de de verificar a disponibilidade de ${tipo}`
       cMensagem += ` para entrada em ${dateIn} e saída em ${dateOut}`

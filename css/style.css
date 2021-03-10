@@ -1184,7 +1184,7 @@ textarea.form-control {
 }
 .block-32 .field-icon-wrap .form-control {
   position: relative;
-  padding-right: 40px;
+  padding-right: 10px;
   -webkit-box-shadow: none !important;
   box-shadow: none !important;
   color: #a6a6a6;
