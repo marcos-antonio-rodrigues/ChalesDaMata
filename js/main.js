@@ -214,3 +214,29 @@
 
 
 $( "#checkIn" ).load( "check-in.html" );
+
+const abrirModal = () => {
+  document.querySelector('#dialogBox').showModal()
+  document.querySelector('body').style.overflowY = 'hidden'
+
+}
+
+const fecharModal = () => {
+  document.querySelector('dialog').close()
+  document.querySelector('body').style.overflowY = 'scroll'
+  document.querySelector('dialog').remove()
+
+}
+
+function onClickModal(event) {
+  if (event.target === document.querySelector('dialog')) {
+    fecharModal()
+  }
+}
+
+
+document.querySelector('dialog').addEventListener("click", onClickModal);
+
+
+abrirModal()
+
