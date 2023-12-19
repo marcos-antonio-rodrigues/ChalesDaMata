@@ -234,9 +234,10 @@ function onClickModal(event) {
   }
 }
 
-
+/*
 document.querySelector('dialog').addEventListener("click", onClickModal);
 
 
 abrirModal()
 
+*/
